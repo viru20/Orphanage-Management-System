@@ -1,0 +1,58 @@
+RewriteEngine On
+
+RewriteRule login$ modules/login/login.php [nc]
+RewriteRule login$ modules/login/loginprocess.php [nc]
+RewriteRule logout$ modules/login/logout.php [nc]
+RewriteRule main$ index.php [nc]
+
+RewriteRule ^change-password$ index.php?module=1 [nc]
+
+RewriteRule ^donation$ index.php?module=2 [nc]
+RewriteRule ^donation-([a-zA-Z-]+)$ index.php?module=2&action=$1 [nc]
+RewriteRule ^donation-([a-zA-Z-]+)-([0-9]+)$ index.php?module=2&action=$1&donationid=$2 [nc]
+
+
+
+RewriteRule ^children$ index.php?module=4 [nc]
+RewriteRule ^children-([a-zA-Z-]+)$ index.php?module=4&action=$1 [nc]
+RewriteRule ^children-([a-zA-Z-]+)-([0-9]+)$ index.php?module=4&action=$1&childrenid=$2 [nc]
+
+RewriteRule ^center$ index.php?module=5 [nc]
+RewriteRule ^center-([a-zA-Z-]+)$ index.php?module=5&action=$1 [nc]
+RewriteRule ^center-([a-zA-Z-]+)-([0-9]+)$ index.php?module=5&action=$1&centerid=$2 [nc]
+
+RewriteRule ^adopt$ index.php?module=6 [nc]
+RewriteRule ^adopt-([a-zA-Z-]+)$ index.php?module=6&action=$1 [nc]
+RewriteRule ^adopt-([a-zA-Z-]+)-([0-9]+)$ index.php?module=6&action=$1&adoptid=$2 [nc]
+
+RewriteRule ^donationreport$ index.php?module=7 [nc]
+RewriteRule ^donationreport-([a-zA-Z-]+)$ index.php?module=7&action=$1 [nc]
+RewriteRule ^donationreport-([a-zA-Z-]+)-([0-9]+)$ index.php?module=7&action=$1&donationreportid=$2 [nc]
+
+RewriteRule ^childrenreport$ index.php?module=8 [nc]
+RewriteRule ^childrenreport-([a-zA-Z-]+)$ index.php?module=8&action=$1 [nc]
+RewriteRule ^childrenreport-([a-zA-Z-]+)-([0-9]+)$ index.php?module=8&action=$1&childrenreportid=$2 [nc]
+
+RewriteRule ^donationrequest$ index.php?module=13 [nc]
+RewriteRule ^donationrequest-([a-zA-Z-]+)$ index.php?module=13&action=$1 [nc]
+RewriteRule ^donationrequest-([a-zA-Z-]+)-([0-9]+)$ index.php?module=13&action=$1&rquestid=$2 [nc]
+
+RewriteRule ^donate$ index.php?module=9 [nc]
+RewriteRule ^donate-([a-zA-Z-]+)$ index.php?module=9&action=$1 [nc]
+RewriteRule ^donate-([a-zA-Z-]+)-([0-9]+)$ index.php?module=9&action=$1&donateid=$2 [nc]
+
+RewriteRule ^adoptreport$ index.php?module=10 [nc]
+RewriteRule ^adoptreport-([a-zA-Z-]+)$ index.php?module=10&action=$1 [nc]
+RewriteRule ^adoptreport-([a-zA-Z-]+)-([0-9]+)$ index.php?module=10&action=$1&adoptreportid=$2 [nc]
+
+RewriteRule ^donatereport$ index.php?module=11 [nc]
+RewriteRule ^donatereport-([a-zA-Z-]+)$ index.php?module=11&action=$1 [nc]
+RewriteRule ^donatereport-([a-zA-Z-]+)-([0-9]+)$ index.php?module=11&action=$1&donatereportid=$2 [nc]
+
+RewriteRule ^adoptrequest$ index.php?module=12 [nc]
+RewriteRule ^adoptrequest-([a-zA-Z-]+)$ index.php?module=12&action=$1 [nc]
+RewriteRule ^adoptrequest-([a-zA-Z-]+)-([0-9]+)$ index.php?module=12&action=$1&adoptrequestid=$2 [nc]
+
+RewriteRule ^donaterequest$ index.php?module=14 [nc]
+RewriteRule ^donaterequest-([a-zA-Z-]+)$ index.php?module=14&action=$1 [nc]
+RewriteRule ^donaterequest-([a-zA-Z-]+)-([0-9]+)$ index.php?module=14&action=$1&donaterequestid=$2 [nc]

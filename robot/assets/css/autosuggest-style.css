@@ -1,0 +1,31 @@
+
+
+.suggestionsBox {
+	position: absolute;
+	width: 95%;
+	background-color: #0685d6;
+	color: #fff;
+	z-index:999999;
+}
+
+.suggestionList ul li {
+	list-style:none;
+	cursor: pointer;
+	margin-left : -15px;
+	
+}
+.suggestionList ul li:hover {
+	background-color:#428bca;
+	color:#fff;
+}
+
+
+.load{
+/*background-image:url(loader.gif);*/
+background-position:right;
+background-repeat:no-repeat;
+}
+
+#suggest {
+	position:relative;
+}

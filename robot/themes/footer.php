@@ -1,0 +1,1 @@
+<div style="width:100%; height:30px;" align="center" class="black8">D & D Pharmaceuticals &copy; 2015-2020. All rights reserved.</div>
